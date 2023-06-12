@@ -1,0 +1,85 @@
+/* The Below block of CSS is for Main Html */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/* The Above block of CSS is for Main Html */
+
+/* The Below block of CSS is for Container Component */
+.container{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    height: 690px;
+    display: grid;
+    grid-template: 130px 1fr 130px / repeat(6 , 1fr);
+    grid-template-areas: 
+    "h h h h h h "
+    ". m m m m . "
+    ". . p p . . "
+    ;
+}
+
+.header-content{
+    justify-self: center;
+    grid-area: h;
+}
+
+
+/* The Above block of CSS is for Container Component */
+
+
+/* The Below block of CSS is for Board Component */
+
+.winner-content{
+    grid-area: p;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+}
+
+.winner-content > p {
+    font-size: 0.9rem;
+}
+
+.btn{
+    border-radius: 10px;
+    border: none;
+    background-color: gray;
+    color: white;
+    width: 80px;
+    height: 30px;
+}
+
+.game-content{
+    justify-self: center;
+    grid-area: m;
+    border: 1px solid gray;
+    width: 500px;
+    display: grid;
+    grid-template:repeat(3 , 1fr) / repeat(3 , 1fr);
+}
+
+
+/* The Above block of CSS is for Board Component */
+
+
+/* The Below block of CSS is for Box Component */
+
+.box{
+    border: 1px solid gray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-size: 2rem;
+}
+
+
+/* The Above block of CSS is for Box Component */
